@@ -1,10 +1,10 @@
 "use client";
 
-import { useState } from 'react';
+import { useState, Suspense } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import styles from './activate.module.css';
 
-export default function ActivateAccount() {
+function ActivateForm() {
   const searchParams = useSearchParams();
   const router = useRouter();
   const token = searchParams.get('token');
@@ -95,3 +95,12 @@ export default function ActivateAccount() {
     </div>
   );
 }
+
+export default function ActivateAccount() {
+  return (
+    <Suspense fallback={<div className={styles.container}><div className={styles.card}><h1 className={styles.title}>Loading...</h1></div></div>}>
+      <ActivateForm />
+    </Suspense>
+  );
+}
+
