@@ -1,0 +1,175 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pageTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.headerActions {
+  display: flex;
+  gap: var(--spacing-3);
+}
+
+.btnPrimary {
+  background-color: var(--color-primary-600);
+  color: white;
+  padding: var(--spacing-2) var(--spacing-4);
+  border-radius: var(--radius-md);
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+
+.btnSecondary {
+  background-color: white;
+  color: var(--color-text-primary);
+  padding: var(--spacing-2) var(--spacing-4);
+  border-radius: var(--radius-md);
+  font-weight: 500;
+  border: 1px solid var(--color-border);
+  cursor: pointer;
+}
+
+.filters {
+  display: flex;
+  gap: var(--spacing-3);
+  background: white;
+  padding: var(--spacing-4);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+}
+
+.searchInput {
+  flex: 1;
+  padding: var(--spacing-2) var(--spacing-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-family: inherit;
+}
+
+.selectInput {
+  padding: var(--spacing-2) var(--spacing-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-family: inherit;
+  background-color: white;
+}
+
+.tableContainer {
+  background: white;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.dataTable {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.dataTable th {
+  background-color: var(--color-surface-gray);
+  padding: var(--spacing-3) var(--spacing-4);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.dataTable td {
+  padding: var(--spacing-4);
+  border-bottom: 1px solid var(--color-border);
+  vertical-align: middle;
+  font-size: 0.875rem;
+}
+
+.dataTable tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.dataTable tbody tr:hover {
+  background-color: var(--color-surface-hover);
+}
+
+.woId a {
+  color: var(--color-primary-600);
+  font-weight: 600;
+}
+
+.eqId {
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
+
+.eqType {
+  color: var(--color-text-secondary);
+  font-size: 0.8125rem;
+}
+
+.woType {
+  font-weight: 500;
+}
+
+.priority {
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+
+.priCritical { color: #ef4444; }
+.priHigh { color: #f97316; }
+.priNormal { color: #3b82f6; }
+
+.statusBadge {
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.statusNew {
+  background-color: #e0e7ff;
+  color: #4338ca;
+}
+
+.statusProgress {
+  background-color: #dbeafe;
+  color: #1d4ed8;
+}
+
+.statusWaiting {
+  background-color: #fef3c7;
+  color: #b45309;
+}
+
+.statusDone {
+  background-color: #d1fae5;
+  color: #047857;
+}
+
+.faultCol {
+  max-width: 250px;
+}
+
+.faultText {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--color-text-secondary);
+}

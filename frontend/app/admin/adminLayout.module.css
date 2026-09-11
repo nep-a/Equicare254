@@ -1,0 +1,102 @@
+.adminContainer {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--color-surface-gray);
+}
+
+.sidebar {
+  width: 280px;
+  background-color: #0f172a;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.sidebarHeader {
+  padding: var(--spacing-6);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebarHeader h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+.adminBadge {
+  font-size: 0.75rem;
+  background: var(--color-primary-600);
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--radius-full);
+  margin-top: 0.5rem;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.sidebarNav {
+  flex: 1;
+  padding: var(--spacing-6) var(--spacing-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+  overflow-y: auto;
+}
+
+.navGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.navGroupTitle {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #94a3b8;
+  font-weight: 600;
+  margin-bottom: var(--spacing-2);
+  padding-left: var(--spacing-3);
+}
+
+.navLink {
+  padding: var(--spacing-2) var(--spacing-3);
+  border-radius: var(--radius-md);
+  color: #e2e8f0;
+  font-weight: 500;
+  transition: background-color 0.2s, color 0.2s;
+  text-decoration: none;
+}
+
+.navLink:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.sidebarFooter {
+  padding: var(--spacing-4);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mainContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.topbar {
+  height: 64px;
+  background-color: white;
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--spacing-6);
+}
+
+.pageContent {
+  padding: var(--spacing-6);
+  flex: 1;
+  overflow-y: auto;
+}

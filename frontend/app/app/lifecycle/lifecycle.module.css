@@ -1,0 +1,152 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pageTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.headerActions {
+  display: flex;
+  gap: var(--spacing-3);
+}
+
+.btnSecondary {
+  background-color: white;
+  color: var(--color-text-primary);
+  padding: var(--spacing-2) var(--spacing-4);
+  border-radius: var(--radius-md);
+  font-weight: 500;
+  border: 1px solid var(--color-border);
+  cursor: pointer;
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-4);
+}
+
+.metricCard {
+  background: white;
+  padding: var(--spacing-6);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.metricValue {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.valDanger {
+  color: #ef4444;
+}
+
+.metricLabel {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+}
+
+.card {
+  background: white;
+  padding: var(--spacing-6);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: var(--spacing-1);
+}
+
+.cardSubtitle {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-4);
+}
+
+.tableContainer {
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+}
+
+.dataTable {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.dataTable th {
+  background-color: var(--color-surface-gray);
+  padding: var(--spacing-3) var(--spacing-4);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.dataTable td {
+  padding: var(--spacing-4);
+  border-bottom: 1px solid var(--color-border);
+  vertical-align: middle;
+  font-size: 0.875rem;
+}
+
+.dataTable tbody tr:hover {
+  background-color: var(--color-surface-hover);
+}
+
+.assetId {
+  font-weight: 600;
+  color: var(--color-primary-600);
+}
+
+.equipment {
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
+
+.eolDate {
+  color: #ef4444;
+  font-weight: 600;
+}
+
+.tco {
+  font-weight: 600;
+}
+
+.btnSecondarySmall {
+  background-color: white;
+  color: #ef4444;
+  padding: var(--spacing-1) var(--spacing-3);
+  border-radius: var(--radius-sm);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  border: 1px solid #fca5a5;
+  cursor: pointer;
+}
+.btnSecondarySmall:hover {
+  background-color: #fef2f2;
+}

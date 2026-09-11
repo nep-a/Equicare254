@@ -1,0 +1,88 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-gray-50);
+  padding: 1rem;
+}
+.card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  width: 100%;
+  max-width: 480px;
+}
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-gray-900);
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+.subtitle {
+  color: var(--color-gray-500);
+  font-size: 0.875rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.formRow {
+  display: flex;
+  gap: 1rem;
+}
+.formRow .formGroup {
+  flex: 1;
+}
+.formGroup label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-gray-700);
+  margin-bottom: 0.5rem;
+}
+.formGroup input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--color-gray-300);
+  border-radius: 6px;
+  font-size: 1rem;
+}
+.formGroup input:focus {
+  outline: none;
+  border-color: var(--color-primary-500);
+  box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.1);
+}
+.btnPrimary {
+  background: var(--color-primary-600);
+  color: white;
+  padding: 0.875rem;
+  border-radius: 6px;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 0.5rem;
+}
+.btnPrimary:hover {
+  background: var(--color-primary-700);
+}
+.btnPrimary:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+.error {
+  background: #fef2f2;
+  color: #b91c1c;
+  padding: 0.75rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}

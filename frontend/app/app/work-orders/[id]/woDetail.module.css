@@ -1,0 +1,219 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+}
+
+.breadcrumbs {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  margin-bottom: var(--spacing-2);
+}
+
+.breadcrumbs a {
+  color: var(--color-primary-600);
+}
+
+.breadcrumbs span {
+  color: var(--color-text-primary);
+  font-weight: 500;
+}
+
+.headerCard {
+  background: white;
+  padding: var(--spacing-6);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-shadow: var(--shadow-sm);
+}
+
+.titleRow {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-4);
+  margin-bottom: var(--spacing-4);
+}
+
+.woName {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.statusBadge {
+  background-color: var(--color-primary-100);
+  color: var(--color-primary-700);
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.priBadge {
+  background-color: #fef2f2;
+  color: #ef4444;
+  border: 1px solid #f87171;
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.metaRow {
+  display: flex;
+  gap: var(--spacing-6);
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+}
+
+.metaRow strong {
+  color: var(--color-text-primary);
+}
+
+.metaRow a {
+  color: var(--color-primary-600);
+}
+
+.headerActions {
+  display: flex;
+  gap: var(--spacing-3);
+  align-items: center;
+}
+
+.statusSelect {
+  padding: var(--spacing-2) var(--spacing-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-family: inherit;
+  font-weight: 500;
+}
+
+.btnPrimary {
+  background-color: var(--color-primary-600);
+  color: white;
+  padding: var(--spacing-2) var(--spacing-4);
+  border-radius: var(--radius-md);
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+
+.btnSecondary {
+  background-color: white;
+  color: var(--color-text-primary);
+  padding: var(--spacing-2) var(--spacing-4);
+  border-radius: var(--radius-md);
+  font-weight: 500;
+  border: 1px solid var(--color-border);
+  cursor: pointer;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--spacing-6);
+}
+
+.mainCol, .sideCol {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+}
+
+.card {
+  background: white;
+  padding: var(--spacing-6);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.cardTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-4);
+  color: var(--color-text-primary);
+}
+
+.faultText {
+  color: var(--color-text-primary);
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: var(--spacing-2);
+}
+
+.metaText {
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+}
+
+.formGroup {
+  margin-bottom: var(--spacing-4);
+}
+
+.label {
+  display: block;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  margin-bottom: var(--spacing-2);
+  font-size: 0.875rem;
+}
+
+.textarea {
+  width: 100%;
+  padding: var(--spacing-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-family: inherit;
+  font-size: 0.875rem;
+  resize: vertical;
+}
+
+.formActions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.taskList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.taskItem {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+  font-size: 0.875rem;
+  color: var(--color-text-primary);
+}
+
+.btnUpload {
+  width: 100%;
+  padding: var(--spacing-3);
+  border: 1px dashed var(--color-primary-500);
+  background: var(--color-primary-50);
+  color: var(--color-primary-700);
+  border-radius: var(--radius-md);
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: var(--spacing-4);
+}
+
+.docList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.docItem {
+  padding: var(--spacing-2);
+  background: var(--color-surface-gray);
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  border: 1px solid var(--color-border);
+}

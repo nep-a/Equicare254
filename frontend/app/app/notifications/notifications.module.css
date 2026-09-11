@@ -1,0 +1,100 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+  max-width: 800px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pageTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.btnSecondary {
+  background-color: white;
+  color: var(--color-text-primary);
+  padding: var(--spacing-2) var(--spacing-4);
+  border-radius: var(--radius-md);
+  font-weight: 500;
+  border: 1px solid var(--color-border);
+  cursor: pointer;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.card {
+  background: white;
+  padding: var(--spacing-4);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.unread {
+  background-color: var(--color-primary-50);
+  border-color: var(--color-primary-100);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.unreadDot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-primary-600);
+  border-radius: 50%;
+}
+
+.badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--radius-sm);
+}
+
+.badgeDanger {
+  background-color: var(--color-status-error-bg);
+  color: var(--color-status-error);
+}
+
+.badgeWarning {
+  background-color: var(--color-status-warning-bg);
+  color: var(--color-status-warning);
+}
+
+.badgeInfo {
+  background-color: #e0e7ff;
+  color: #4338ca;
+}
+
+.title {
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.time {
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+}
+
+.message {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  padding-left: 1.5rem; /* align under title */
+}

@@ -1,0 +1,155 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pageTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.headerActions {
+  display: flex;
+  gap: var(--spacing-3);
+}
+
+.btnPrimary {
+  background-color: var(--color-primary-600);
+  color: white;
+  padding: var(--spacing-2) var(--spacing-4);
+  border-radius: var(--radius-md);
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+
+.btnSecondary {
+  background-color: white;
+  color: var(--color-text-primary);
+  padding: var(--spacing-2) var(--spacing-4);
+  border-radius: var(--radius-md);
+  font-weight: 500;
+  border: 1px solid var(--color-border);
+  cursor: pointer;
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-4);
+}
+
+.metricCard {
+  background: white;
+  padding: var(--spacing-6);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.metricValue {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.metricLabel {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+}
+
+.tableContainer {
+  background: white;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.dataTable {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.dataTable th {
+  background-color: var(--color-surface-gray);
+  padding: var(--spacing-3) var(--spacing-4);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.dataTable td {
+  padding: var(--spacing-4);
+  border-bottom: 1px solid var(--color-border);
+  vertical-align: middle;
+  font-size: 0.875rem;
+}
+
+.dataTable tbody tr:hover {
+  background-color: var(--color-surface-hover);
+}
+
+.reqNo {
+  font-weight: 600;
+  color: var(--color-primary-600);
+}
+
+.equipment {
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.badgeNeutral {
+  background-color: #f1f5f9;
+  color: #475569;
+}
+
+.badgeSuccess {
+  background-color: #d1fae5;
+  color: #047857;
+}
+
+.badgeInfo {
+  background-color: #dbeafe;
+  color: #1d4ed8;
+}
+
+.badgeDelivered {
+  background-color: #e0e7ff;
+  color: #4338ca;
+}
+
+.btnSecondarySmall {
+  background-color: white;
+  color: var(--color-text-primary);
+  padding: var(--spacing-1) var(--spacing-3);
+  border-radius: var(--radius-sm);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  border: 1px solid var(--color-border);
+  cursor: pointer;
+}
